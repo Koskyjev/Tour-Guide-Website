@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" text="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" style="font-size: 25px;">Home</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section style="padding-top: 20px;">
+
+            <form action="https://httpbin.org/get" method="get">
+                <br>
+                <fieldset>
+                    <legend>Log In</legend>
+
+                    <label for="email">Email*:</label>
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                    <br><br>
+                    <label for="password">Password*:</label>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    required 
+                    placeholder="at least one letter and one number"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    >
+                    <br><br>
+
+                    <label for="rememberPassword">Remeber Password:
+                    </label>
+                    <input type="checkbox" name="rememberPassword" id="rememberPassword">
+                    <br><br><button 
+                    type="submit"
+                    formaction="https://httpbin.org/post"
+                    formmethod="post"
+                    >Log In
+                </button>
+                </fieldset>
+                <br>
+            </form>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Sign Up</legend>
+
+                    <label for="firstName">First Name*:</label>
+                    <input type="text" name="firstName" id="firstName" required autofocus >
+                    <br><br>
+                    <label for="lastName">Last Name*:</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                <br><br>
+
+               
+                    <label for="phoneNumber">Phone Number: </label>
+                    <input
+                     type="tel" 
+                     name="phoneNumber" 
+                     id="phoneNumber"
+                     pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    <br><br>
+                     <textarea name="message" id="message" cols="80" rows="10" placeholder="Type your message here...">
+                     </textarea>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Age</legend>
+
+                    <p>How old are You?</p>
+
+                    <label>
+                        18-25:
+                        <input type="radio" name="age" id="" value="">
+                      </label>
+
+                      <br>
+                      <label>
+                        26-40:
+                        <input type="radio" name="age" id="" value="">
+                      </label>
+
+                      <br>
+
+                      <label>
+                        40-55:
+                        <input type="radio" name="age" id="" value="">
+                      </label>
+                      <br>
+
+                      <label>
+                        Over 55:
+                        <input type="radio" name="age" id="" value="">
+                      </label>
+                </fieldset>
+                <button type="submit">Submit (GET)</button>
+                <button 
+                type="submit"
+                formaction="https://httpbin.org/post"
+                formmethod="post"
+                >Submit (POST)
+            </button>
+
+                <button type="reset">Reset</button>
+
+            </form>
+            <!--<style>
+                body {
+                        background-image: radial-gradient(blue, white);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                    }
+            </style>-->
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

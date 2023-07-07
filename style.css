@@ -1,0 +1,39 @@
+html {
+    background-image: url(/IMG/ontario.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+
+li {
+    color: rgb (100,0,0)
+}
+
+th {
+    color: black;
+    }
+td {
+    font-style: italic;
+    font-weight: bold;
+    }
+
+
+#ROM {
+    color: blueviolet;
+}
+
+
+.pic {
+    width: 50%;
+}
+
+.text {
+    width: 50%;
+    color: rgb(133, 2, 2);
+    text-align: left;
+}
+a{
+    color: wheat;
+    font-style: italic;
+    font-size: x-large;
+}
