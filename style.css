@@ -18,22 +18,44 @@ td {
     }
 
 
-#ROM {
-    color: blueviolet;
-}
-
-
 .pic {
-    width: 50%;
+    width: 100%;
 }
 
 .text {
-    width: 50%;
-    color: rgb(133, 2, 2);
+    width: 100%;
+    color:white;
     text-align: left;
 }
 a{
     color: wheat;
     font-style: italic;
-    font-size: x-large;
+    font-size: large;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+
+#Left {
+    float:left;
+    width: 45%;
+    padding-left: 1%;
+}
+
+#Right {
+    float: right;
+    width: 45%;
+    padding-right: 1%;
+}
+
+.pic {
+    border-radius: 50px;
+}
+
+h1 {
+    color: wheat;
+    text-decoration-line: overline;
+    text-align: center;
+    font-size: xx-large;
 }
