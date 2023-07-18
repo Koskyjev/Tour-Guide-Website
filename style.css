@@ -1,12 +1,14 @@
 html {
     background-image: url(/IMG/ontario.jpg);
     background-size: cover;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-attachment: scroll;
 }
 
-li {
-    color: rgb (100,0,0)
+ul {
+ list-style-type: none;
+ display: flex;
+ float: right;
 }
 
 th {
@@ -27,15 +29,55 @@ td {
     color:white;
     text-align: left;
 }
-a{
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    text-align: right;
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar-link {
+         display: none;
+         align-content: center;
+         width: 100%;
+         text-align: center;
+
+    }
+    
+    .navbar-toggle {
+        display: block;
+    }
+    
+    .active {
+        display: block;
+    }
+}
+
+a {
+    display: flex;
     color: wheat;
     font-style: italic;
     font-size: large;
     text-decoration: none;
-    padding: 1rem;
+    float: left;
+    margin: 0, 1rem;
 }
 
-
+.navbar li {
+    padding: 1erm;
+}
 
 #Left {
     float:left;
@@ -54,8 +96,10 @@ a{
 }
 
 h1 {
+    display: flex;
     color: wheat;
     text-decoration-line: overline;
     text-align: center;
     font-size: xx-large;
+    width: 100%;
 }
